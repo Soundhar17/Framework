@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="blaze">
+	
+		<groups>
+			<define name="oneTests">
+				<include name="tc_01" />
+			</define>
+			<define name="secondTests">
+				<include name="tc_02" />
+				<include name="tc_03" />
+				<include name="tc_04" />
+				<include name="tc_05" />
+				<include name="tc_06" />
+				<include name="tc_07" />
+			</define>
+			<run>
+				<include name="oneTests" />
+				<include name="secondTests" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Annotations.blazedemoTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

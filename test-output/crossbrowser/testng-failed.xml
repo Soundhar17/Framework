@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [crossbrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Annotations.dataprovider">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="data1"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Annotations.dataprovider -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [crossbrowser] -->

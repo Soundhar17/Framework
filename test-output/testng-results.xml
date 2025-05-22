@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-22T15:57:53 IST" name="Suite" finished-at="2025-05-22T15:58:16 IST" duration-ms="23394">
+    <groups>
+      <group name="smoke">
+        <method signature="dataprovider.data(java.lang.String,java.lang.String)[pri:1, instance:Annotations.dataprovider@7bd4937b]" name="data" class="Annotations.dataprovider"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="dataprovider.data1(java.lang.String,java.lang.String)[pri:2, instance:Annotations.dataprovider@7bd4937b]" name="data1" class="Annotations.dataprovider"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-05-22T15:57:53 IST" name="SmokeTest" finished-at="2025-05-22T15:58:16 IST" duration-ms="23394">
+      <class name="Annotations.dataprovider">
+        <test-method signature="data(java.lang.String,java.lang.String)[pri:1, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:57:53 IST" name="data" data-provider="data" finished-at="2025-05-22T15:57:53 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.io.FileNotFoundException: E:\eclipse new\TestNg\src\main\resources\Excelsheet\Excel 1.0.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: E:\eclipse new\TestNg\src\main\resources\Excelsheet\Excel 1.0.xlsx (The system cannot find the path specified)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.io.FileNotFoundException: E:\eclipse new\TestNg\src\main\resources\Excelsheet\Excel 1.0.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at Utilities.Baseclass.data(Baseclass.java:308)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:57:54 IST" name="launchbrowser" finished-at="2025-05-22T15:57:59 IST" duration-ms="4933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="data1(java.lang.String,java.lang.String)[pri:2, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:57:59 IST" name="data1" data-provider="datas" finished-at="2025-05-22T15:58:00 IST" duration-ms="989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stu dent]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Paswes 123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data1 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:00 IST" name="closebrowser" finished-at="2025-05-22T15:58:00 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:00 IST" name="launchbrowser" finished-at="2025-05-22T15:58:03 IST" duration-ms="3131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="data1(java.lang.String,java.lang.String)[pri:2, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:03 IST" name="data1" data-provider="datas" finished-at="2025-05-22T15:58:04 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Stu 234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data1 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:04 IST" name="closebrowser" finished-at="2025-05-22T15:58:04 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:04 IST" name="launchbrowser" finished-at="2025-05-22T15:58:07 IST" duration-ms="3226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="data1(java.lang.String,java.lang.String)[pri:2, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:07 IST" name="data1" data-provider="datas" finished-at="2025-05-22T15:58:08 IST" duration-ms="434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass12sdr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data1 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:08 IST" name="closebrowser" finished-at="2025-05-22T15:58:08 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:08 IST" name="launchbrowser" finished-at="2025-05-22T15:58:11 IST" duration-ms="3437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="data1(java.lang.String,java.lang.String)[pri:2, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:11 IST" name="data1" data-provider="datas" finished-at="2025-05-22T15:58:12 IST" duration-ms="399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[233]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data1 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:12 IST" name="closebrowser" finished-at="2025-05-22T15:58:12 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:12 IST" name="launchbrowser" finished-at="2025-05-22T15:58:15 IST" duration-ms="3271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="data1(java.lang.String,java.lang.String)[pri:2, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:15 IST" name="data1" data-provider="datas" finished-at="2025-05-22T15:58:16 IST" duration-ms="1125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- data1 -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:Annotations.dataprovider@7bd4937b]" started-at="2025-05-22T15:58:16 IST" name="closebrowser" finished-at="2025-05-22T15:58:16 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- Annotations.dataprovider -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

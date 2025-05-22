@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SmokeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Annotations.dataprovider">
+        <methods>
+          <include name="data"/>
+          <include name="launchbrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Annotations.dataprovider -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [groups] -->
