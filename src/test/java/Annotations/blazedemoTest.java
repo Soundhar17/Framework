@@ -51,7 +51,7 @@ public class blazedemoTest extends Baseclass {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	
+
 	public void setup() {
 		blazedemoTest.browser("chrome");
 		blazedemoTest.geturl("https://blazedemo.com/");

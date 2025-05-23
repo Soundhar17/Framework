@@ -7,11 +7,17 @@
   </listeners>
   <test thread-count="5" name="SmokeTest(failed)">
     <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="sanity"/>
+      </run>
+    </groups>
     <classes>
       <class name="Annotations.dataprovider">
         <methods>
-          <include name="data"/>
           <include name="launchbrowser"/>
+          <include name="data1" invocation-numbers="4 4 4"/>
           <include name="closebrowser"/>
         </methods>
       </class> <!-- Annotations.dataprovider -->
